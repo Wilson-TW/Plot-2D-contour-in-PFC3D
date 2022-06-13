@@ -16,21 +16,6 @@ from vec import vec
 dockWidget = it.dockWidget("Contour and Hillshade tool","",True)
 dockWidget = shiboken2.wrapInstance(int(dockWidget),QtWidgets.QDockWidget)
 widget = dockWidget.widget()
-
-#mainwindow = it.mainWindow()
-#mainwindow = shiboken2.wrapInstance(int(mainwindow),QtWidgets.QMainWindow)
-#toolbar = mainwindow.findChild(QtWidgets.QToolBar)
-#toolbars = mainwindow.findChildren(QtWidgets.QToolBar)
-#menubar = toolbar.findChild(QtWidgets.QMenuBar)
-#menu = menubar.addMenu("Gift")
-#menu.addAction("Congratulations graduate!")
-#menu.addAction("boo")
-#menu.addAction("boo")
-#menu.addAction("Yen!!")
-
-def max_mag(a,b):
-  if a > b: return a
-  else: return b
   
 class Window(QtWidgets.QWidget):
     def __init__(self, parent = None):
